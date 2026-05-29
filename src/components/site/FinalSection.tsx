@@ -6,73 +6,53 @@ import { Reveal } from "./Reveal";
 export function FinalSection() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="end" ref={ref} className="relative bg-paper paper-grain overflow-hidden">
-      {/* Parallax cover */}
-      <div className="relative h-[70vh] border-b-4 border-ink overflow-hidden">
-        <motion.div style={{ y }} className="absolute inset-0">
-          <img src={skylineImg} alt="Skyline at dawn, between collapse and renewal"
-               loading="lazy" className="h-full w-full object-cover img-news-red" />
-        </motion.div>
-        <div className="absolute inset-0 mix-blend-multiply halftone opacity-[0.12]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/40 via-transparent to-paper" />
-        <div className="absolute inset-x-0 bottom-8 mx-auto max-w-[1400px] px-5">
-          <div className="font-display uppercase tracking-[0.4em] text-xs blood">Conclusion · The Last Page</div>
-          <h2 className="mt-2 font-display font-black uppercase leading-[0.82]"
-              style={{ fontSize: "clamp(2.25rem, 7.5vw, 6.5rem)" }}>
-            AI will not decide humanity's future.<br/>
-            <span className="blood">Society will.</span>
-          </h2>
-        </div>
-      </div>
+    <section id="end" ref={ref} className="relative min-h-screen overflow-hidden">
+      <motion.div style={{ y }} className="absolute inset-0">
+        <img src={skylineImg} alt="Futuristic skyline at dawn through soft fog"
+             loading="lazy" width={1920} height={1080}
+             className="h-full w-full object-cover opacity-80" />
+      </motion.div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-background" />
 
-      <div className="mx-auto max-w-[1100px] px-5 py-20 md:py-28 text-center">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 py-40 flex flex-col items-center text-center min-h-screen justify-center">
         <Reveal>
-          <p className="font-display uppercase text-2xl md:text-3xl leading-[1.15] font-bold max-w-3xl mx-auto">
-            AI itself is neither utopia nor dystopia. The future depends on
-            <span className="blood"> who owns</span> it, <span className="blood">who controls</span> production,
-            and <span className="blood">how wealth</span> is distributed when the machines have done the work.
-          </p>
-        </Reveal>
-
-        <Reveal delay={0.15}>
-          <figure className="mt-16 border-t-4 border-b-4 border-ink py-10 relative">
-            <div className="absolute inset-0 halftone-red opacity-[0.05] pointer-events-none" />
-            <blockquote className="font-display font-black uppercase leading-[0.95] tracking-tight"
-                        style={{ fontSize: "clamp(1.75rem, 6vw, 5rem)" }}>
-              "When productive forces change,
-              <br/><span className="blood">society itself must change with them.</span>"
-            </blockquote>
-            <figcaption className="mt-8 font-condensed uppercase tracking-[0.4em] text-sm">
-              — Editorial Board · The Press of the Revolution · 2030
-            </figcaption>
-          </figure>
-        </Reveal>
-
-        <Reveal delay={0.3}>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-            <a href="#top" className="brut-red px-7 py-4 font-display uppercase tracking-[0.3em] text-sm">↑ Begin Again</a>
-            <a href="#yeager" className="brut px-7 py-4 font-display uppercase tracking-[0.3em] text-sm">Re-read Part VI</a>
+          <div className="font-mono text-[11px] uppercase tracking-[0.5em] text-primary text-glow">
+            · Final Frame ·
           </div>
         </Reveal>
 
-        <div className="mt-20 grid md:grid-cols-3 gap-0 border-2 border-ink text-left">
-          {[
-            { t: "Print run", v: "∞" },
-            { t: "Edition", v: "Special · 2030" },
-            { t: "Distribution", v: "Underground / Free" },
-          ].map((c) => (
-            <div key={c.t} className="p-5 border-b-2 md:border-b-0 md:[&:not(:last-child)]:border-r-2 border-ink">
-              <div className="font-condensed uppercase tracking-[0.3em] text-[11px] text-muted-foreground">{c.t}</div>
-              <div className="font-display font-black uppercase text-3xl">{c.v}</div>
-            </div>
-          ))}
-        </div>
+        <Reveal delay={0.2}>
+          <motion.h2
+            className="mt-12 font-display font-extralight tracking-tight text-glow-white"
+            style={{ fontSize: "clamp(1.875rem,5vw,4rem)", lineHeight: 1.1 }}
+          >
+            &ldquo;The future is not determined by{" "}
+            <span className="italic text-primary text-glow">how powerful</span> AI becomes,
+            but by <span className="italic text-accent text-glow-crimson">who owns it</span>{" "}
+            and who benefits from it.&rdquo;
+          </motion.h2>
+        </Reveal>
 
-        <div className="mt-10 font-condensed uppercase tracking-[0.35em] text-[11px] text-muted-foreground">
-          The Press of the Revolution · A philosophical broadsheet on AI, capital, and the next century
+        <Reveal delay={0.5}>
+          <div className="mt-20 flex items-center gap-6 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+            <span className="h-px w-16 bg-border" />
+            Soundtrack suggestion · Hans Zimmer — &ldquo;Time&rdquo;
+            <span className="h-px w-16 bg-border" />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.7}>
+          <a href="#top" className="mt-16 group relative inline-flex items-center gap-3 glass-strong px-10 py-5 clip-corner border border-primary/40 shadow-neon hover:shadow-neon transition-all animate-pulse-glow">
+            <span className="font-mono text-xs uppercase tracking-[0.4em] text-glow-white">Begin Again</span>
+            <span className="text-primary group-hover:-translate-y-1 transition-transform">↑</span>
+          </a>
+        </Reveal>
+
+        <div className="mt-32 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground/60">
+          AI / 2030 — A cinematic essay through the lens of Marxism
         </div>
       </div>
     </section>

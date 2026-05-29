@@ -1,107 +1,73 @@
 import { Reveal } from "./Reveal";
-import factoryImg from "@/assets/factory.jpg";
-import dystopiaImg from "@/assets/dystopia.jpg";
+import { SectionLabel } from "./SectionLabel";
+import protestImg from "@/assets/protest.jpg";
 
 export function ContradictionSection() {
   return (
-    <section id="contradiction" className="relative bg-paper paper-grain border-b-4 border-ink">
-      <div className="mx-auto max-w-[1400px] px-5 py-16 md:py-24">
-        <div className="flex items-end justify-between border-b-2 border-ink pb-3">
-          <div>
-            <div className="font-display uppercase tracking-[0.4em] text-xs blood">Part II</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              The <span className="blood">Contradiction</span>
-            </h2>
-          </div>
-          <span className="stamp animate-flicker hidden md:inline-block">Editorial</span>
-        </div>
+    <section id="contradiction" className="relative py-32 md:py-48 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
 
-        <Reveal>
-          <p className="mt-8 max-w-3xl font-display text-2xl md:text-3xl uppercase leading-[1.1] font-light">
-            New productive forces <span className="blood font-bold">colliding</span> with old relations of production.
-          </p>
+      <div className="relative mx-auto max-w-7xl px-6">
+        <Reveal><SectionLabel index="03" label="Contradiction" accent="red" /></Reveal>
+        <Reveal delay={0.1}>
+          <h2 className="mt-8 max-w-5xl font-display font-extralight tracking-tight"
+              style={{ fontSize: "clamp(2.25rem,6vw,5rem)", lineHeight: 0.95 }}>
+            <span className="text-glow-white">Old relations</span>
+            <br />
+            <span className="italic text-accent text-glow-crimson">of production</span>
+            <span className="text-muted-foreground"> vs. </span>
+            <span className="text-primary text-glow">new forces</span>.
+          </h2>
         </Reveal>
 
-        {/* Split screen */}
-        <div className="mt-12 grid md:grid-cols-2 border-2 border-ink">
+        <div className="mt-20 grid gap-8 lg:grid-cols-2">
           <Reveal>
-            <div className="relative bg-paper p-6 md:p-8 border-b-2 md:border-b-0 md:border-r-2 border-ink">
-              <div className="font-display uppercase tracking-[0.3em] text-xs">Side A · Below</div>
-              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Workers losing <span className="blood">everything</span>
-              </h3>
-              <figure className="mt-5 border-2 border-ink overflow-hidden">
-                <img src={factoryImg} alt="Empty assembly hall after the last shift"
-                     loading="lazy" className="w-full h-56 object-cover img-news-red" />
-              </figure>
-              <ul className="mt-5 space-y-3 font-condensed text-[14px]">
-                {[
-                  "Collapse of the middle class — engineers queue at food banks.",
-                  "Universal eviction notices issued algorithmically at 03:00.",
-                  "Skill is no longer a contract — it is a memory.",
-                  "Children study trades that will not exist by graduation.",
-                ].map((t, i) => (
-                  <li key={i} className="flex gap-3"><span className="blood font-bold">▼</span><span>{t}</span></li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <div className="relative bg-ink text-paper p-6 md:p-8">
-              <div className="font-display uppercase tracking-[0.3em] text-xs blood">Side B · Above</div>
-              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Ultra-rich AI <span className="blood">corporations</span>
-              </h3>
-              <figure className="mt-5 border-2 border-paper overflow-hidden">
-                <img src={dystopiaImg} alt="Luxury data-monopoly skyline at dusk"
-                     loading="lazy" className="w-full h-56 object-cover img-news" />
-              </figure>
-              <ul className="mt-5 space-y-3 font-condensed text-[14px]">
-                {[
-                  "Data monopolies priced by the gigabyte of human attention.",
-                  "Luxury towers cooled by oceans you cannot fish in.",
-                  "Boards that meet quarterly to decide what citizenship means.",
-                  "Private armies of inference. Public hunger of the displaced.",
-                ].map((t, i) => (
-                  <li key={i} className="flex gap-3"><span className="blood font-bold">▲</span><span>{t}</span></li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
-        </div>
-
-        {/* Marx monument quote */}
-        <Reveal>
-          <figure className="mt-16 border-t-4 border-b-4 border-ink py-10 md:py-14 relative">
-            <div className="absolute inset-0 halftone-red opacity-[0.04] pointer-events-none" />
-            <div className="font-display uppercase tracking-[0.4em] text-xs blood text-center">From the Archives · 1859</div>
-            <blockquote className="mt-6 font-display font-black uppercase text-center leading-[0.95] tracking-tight"
-                        style={{ fontSize: "clamp(1.6rem,5.5vw,4.5rem)" }}>
-              "At a certain stage of development, the relations of production become
-              <span className="blood"> chains </span>
-              upon the productive forces."
-            </blockquote>
-            <figcaption className="mt-8 text-center font-condensed uppercase tracking-[0.4em] text-sm">
-              — Karl Marx · A Contribution to the Critique of Political Economy
-            </figcaption>
-          </figure>
-        </Reveal>
-
-        {/* Metaphor row */}
-        <Reveal>
-          <div className="mt-14 grid md:grid-cols-3 gap-0 border-2 border-ink">
-            {[
-              { t: "Chains", n: "Old contracts strapped to new machines." },
-              { t: "Cages", n: "Walled platforms that bill you for breathing." },
-              { t: "Walls", n: "Citizenship redrawn around the server farms." },
-            ].map((m, i) => (
-              <div key={m.t} className={`p-7 ${i !== 2 ? "md:border-r-2 border-ink" : ""} ${i !== 2 ? "border-b-2 md:border-b-0 border-ink" : ""} bg-paper`}>
-                <div className="font-display font-black uppercase text-6xl leading-none">{m.t}</div>
-                <p className="mt-3 font-condensed text-[14px] leading-[1.5]">{m.n}</p>
+            <div className="relative h-full overflow-hidden clip-corner border border-accent/30">
+              <img src={protestImg} alt="Crowd of protesters under crimson light with surveillance drones" loading="lazy"
+                   width={1600} height={1024}
+                   className="w-full h-[520px] object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+              <div className="absolute top-4 left-4 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.3em] text-accent animate-flicker">
+                <span className="h-2 w-2 bg-accent rounded-full shadow-crimson" /> LIVE · SECTOR 12
               </div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-accent text-glow-crimson">Unrest Index</div>
+                <div className="mt-2 text-5xl md:text-6xl font-light tabular-nums text-glow-white">94.7</div>
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="space-y-6">
+            {[
+              { t: "Concentration", n: "Twelve corporations own the models that run civilization." },
+              { t: "Displacement", n: "Billions of workers — surplus to a system that no longer needs them." },
+              { t: "Surveillance", n: "Every gesture priced. Every thought predicted." },
+              { t: "Revolt", n: "Streets burning under the gaze of autonomous patrols." },
+            ].map((item, i) => (
+              <Reveal key={item.t} delay={i * 0.1}>
+                <div className="group glass clip-corner p-6 flex gap-6 hover:border-accent/40 transition-all">
+                  <div className="font-mono text-xs uppercase tracking-[0.3em] text-accent text-glow-crimson pt-1">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <div>
+                    <div className="text-2xl font-display">{item.t}</div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.n}</p>
+                  </div>
+                </div>
+              </Reveal>
             ))}
           </div>
+        </div>
+
+        <Reveal delay={0.2}>
+          <blockquote className="mt-24 mx-auto max-w-4xl text-center font-display font-extralight italic text-glow-white"
+                      style={{ fontSize: "clamp(1.5rem,3.5vw,2.5rem)", lineHeight: 1.2 }}>
+            &ldquo;At a certain stage of development, the material productive forces come
+            into conflict with the existing relations of production…&rdquo;
+            <span className="block mt-6 font-mono text-[11px] not-italic uppercase tracking-[0.4em] text-muted-foreground">
+              — Marx, 1859
+            </span>
+          </blockquote>
         </Reveal>
       </div>
     </section>
