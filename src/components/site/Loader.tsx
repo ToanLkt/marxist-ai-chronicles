@@ -8,10 +8,10 @@ export function Loader() {
   useEffect(() => {
     let p = 0;
     const id = setInterval(() => {
-      p += Math.random() * 14 + 4;
-      if (p >= 100) { p = 100; clearInterval(id); setTimeout(() => setDone(true), 350); }
+      p += Math.random() * 18 + 6;
+      if (p >= 100) { p = 100; clearInterval(id); setTimeout(() => setDone(true), 280); }
       setPct(Math.floor(p));
-    }, 110);
+    }, 90);
     return () => clearInterval(id);
   }, []);
 
@@ -20,22 +20,20 @@ export function Loader() {
       {!done && (
         <motion.div
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background"
+          transition={{ duration: 0.5 }}
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-paper paper-grain"
         >
-          <div className="absolute inset-0 grid-bg opacity-40" />
-          <div className="font-mono text-xs uppercase tracking-[0.4em] text-primary text-glow mb-6">
-            Initializing Protocol
+          <div className="font-display text-xs uppercase tracking-[0.6em] blood mb-4">
+            Press Run · Edition 2030
           </div>
-          <div className="text-6xl md:text-8xl font-display font-light tabular-nums text-glow-white">
-            {String(pct).padStart(3, "0")}
-            <span className="text-primary">%</span>
+          <div className="font-display text-7xl md:text-9xl font-black tabular-nums leading-none">
+            {String(pct).padStart(3, "0")}<span className="blood">%</span>
           </div>
-          <div className="mt-8 h-px w-72 bg-border overflow-hidden">
-            <div className="h-full bg-primary shadow-neon" style={{ width: `${pct}%` }} />
+          <div className="mt-6 h-[6px] w-80 max-w-[80vw] border-2 border-ink bg-paper">
+            <div className="h-full bg-ink" style={{ width: `${pct}%` }} />
           </div>
-          <div className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            AI Revolution // 2030
+          <div className="mt-6 font-condensed text-[11px] uppercase tracking-[0.4em] text-muted-foreground">
+            Typesetting the manifesto…
           </div>
         </motion.div>
       )}
