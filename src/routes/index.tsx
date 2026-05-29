@@ -1,29 +1,40 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Loader } from "@/components/site/Loader";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { WorldSection } from "@/components/site/WorldSection";
+import { ForceSection } from "@/components/site/ForceSection";
+import { ContradictionSection } from "@/components/site/ContradictionSection";
+import { FuturesSection } from "@/components/site/FuturesSection";
+import { TitansSection } from "@/components/site/TitansSection";
+import { FinalSection } from "@/components/site/FinalSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "AI Revolution 2030 — A Cinematic Essay through Marxism" },
+      { name: "description", content: "When AI becomes the new productive force of humanity. A cinematic, philosophical essay on the AI Revolution of 2030." },
+      { property: "og:title", content: "AI Revolution 2030" },
+      { property: "og:description", content: "When AI becomes the new productive force of humanity." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Loader />
+      <main className="relative bg-background text-foreground">
+        <Nav />
+        <Hero />
+        <WorldSection />
+        <ForceSection />
+        <ContradictionSection />
+        <FuturesSection />
+        <TitansSection />
+        <FinalSection />
+      </main>
+    </>
   );
 }
