@@ -7,17 +7,17 @@ export function Hero() {
       {/* Top status strip */}
       <div className="border-y-2 border-ink bg-paper">
         <div className="mx-auto max-w-[1400px] px-5 py-1.5 flex items-center justify-between font-condensed text-[11px] uppercase tracking-[0.3em]">
-          <span>Special Edition · Investigative Report</span>
-          <span className="hidden md:inline">Filed from Sector 12 · 04:17</span>
-          <span className="blood font-bold animate-flicker">● LIVE</span>
+          <span>Ấn Bản Đặc Biệt · Phóng Sự Điều Tra</span>
+          <span className="hidden md:inline">Gửi đi từ Khu vực 12 · 04:17</span>
+          <span className="blood font-bold animate-flicker">● TRỰC TIẾP</span>
         </div>
       </div>
 
       <div className="mx-auto max-w-[1400px] px-5 py-10 md:py-14">
         {/* Section line */}
         <div className="flex items-center justify-between border-b-2 border-ink pb-2 mb-6 font-display text-xs uppercase tracking-[0.4em]">
-          <span>Front Page · Cover Story</span>
-          <span className="blood">Dossier 01 / VI</span>
+          <span>Trang Nhất · Câu Chuyện Bìa</span>
+          <span className="blood">Hồ Sơ 01 / VI</span>
         </div>
 
         {/* MAIN HEADLINE */}
@@ -34,7 +34,7 @@ export function Hero() {
           className="mt-4 font-display font-light uppercase border-y-2 border-ink py-4 leading-[1.05]"
           style={{ fontSize: "clamp(1.1rem, 2.6vw, 2.1rem)" }}
         >
-          When productive forces become <span className="blood font-bold italic">stronger</span> than the society containing them.
+          Khi lực lượng sản xuất trở nên <span className="blood font-bold italic">mạnh hơn</span> chính cái xã hội đang chứa đựng chúng.
         </motion.h2>
 
         {/* GRID: image + columns */}
@@ -44,16 +44,16 @@ export function Hero() {
             className="relative"
           >
             <div className="relative border-2 border-ink overflow-hidden">
-              <img src={heroImg} alt="Towering surveillance skyline of the AI megacity, 2030"
+              <img src={heroImg} alt="Đường chân trời siêu giám sát của siêu đô thị AI, năm 2030"
                    width={1920} height={1080}
                    className="w-full h-[44vh] md:h-[58vh] object-cover img-news" />
               <div className="absolute inset-0 pointer-events-none mix-blend-multiply halftone opacity-[0.06]" />
               <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_55%,var(--ink)_140%)] opacity-40" />
-              <div className="absolute top-3 left-3 brut-red px-2 py-1 font-display text-[11px] uppercase tracking-[0.3em]">Classified · Recovered Footage</div>
-              <div className="absolute bottom-3 right-3 bg-ink text-paper px-2 py-1 font-condensed text-[10px] uppercase tracking-[0.3em]">Photo · Anonymous · 03·11·2030</div>
+              <div className="absolute top-3 left-3 brut-red px-2 py-1 font-display text-[11px] uppercase tracking-[0.3em]">Mật · Tư Liệu Thu Hồi</div>
+              <div className="absolute bottom-3 right-3 bg-ink text-paper px-2 py-1 font-condensed text-[10px] uppercase tracking-[0.3em]">Ảnh · Vô Danh · 11·03·2030</div>
             </div>
             <figcaption className="mt-2 font-condensed text-[12px] uppercase tracking-[0.18em] text-muted-foreground border-b border-ink pb-2">
-              Above — The financial citadel of Neo-District 7, where twelve corporations are said to own the models that run civilization.
+              Trên — Thành trì tài chính của Tân Quận 7, nơi mười hai tập đoàn được cho là sở hữu các mô hình điều khiển nền văn minh.
             </figcaption>
           </motion.figure>
 
@@ -61,24 +61,24 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.45 }}
             className="space-y-5"
           >
-            <div className="border-b-2 border-ink pb-2 font-display uppercase tracking-[0.3em] text-xs">By / The Editorial Board</div>
+            <div className="border-b-2 border-ink pb-2 font-display uppercase tracking-[0.3em] text-xs">Bởi / Ban Biên Tập</div>
             <p className="drop-cap text-[15px] leading-[1.6]">
-              In the year of our automation, two thousand and thirty, the machines did not rise. They were owned. Every gesture, every contract, every diagnosis, every line of code — produced at near-zero marginal cost by systems that no longer require us. And yet the bread is more expensive than ever.
+              Vào năm tự động hóa của chúng ta, hai nghìn ba mươi, máy móc không vùng lên. Chúng đã bị sở hữu. Mỗi cử chỉ, mỗi hợp đồng, mỗi chẩn đoán, mỗi dòng mã — đều được tạo ra với chi phí biên gần bằng không bởi những hệ thống không còn cần đến chúng ta. Vậy mà bánh mì lại đắt hơn bao giờ hết.
             </p>
             <p className="text-[15px] leading-[1.6]">
-              This special edition is filed against the storm. It is a record of what was sold to us as progress, and a question that the next decade will answer with either bread or fire: <span className="font-bold uppercase">who owns the means of cognition?</span>
+              Ấn bản đặc biệt này được phát hành giữa cơn bão. Đó là biên bản về những gì đã bị bán cho chúng ta dưới cái tên tiến bộ, và là một câu hỏi mà thập niên tới sẽ trả lời bằng bánh mì hoặc lửa: <span className="font-bold uppercase">ai sở hữu các phương tiện nhận thức?</span>
             </p>
 
             <aside className="brut p-5">
-              <div className="font-display uppercase tracking-[0.25em] text-[11px] blood mb-2">Editor's Pull-Quote</div>
+              <div className="font-display uppercase tracking-[0.25em] text-[11px] blood mb-2">Trích Dẫn Của Biên Tập</div>
               <p className="font-display text-2xl md:text-3xl font-bold leading-[1.05] uppercase">
-                "The problem is not how powerful AI becomes. <span className="blood">The problem is who owns it.</span>"
+                "Vấn đề không phải AI mạnh đến đâu. <span className="blood">Vấn đề là ai sở hữu nó.</span>"
               </p>
             </aside>
 
             <div className="flex flex-wrap gap-3 pt-2">
-              <a href="#world" className="brut-red px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">Read the Dossier →</a>
-              <a href="#yeager" className="brut px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">VI. The Yeager Question</a>
+              <a href="#world" className="brut-red px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">Đọc Hồ Sơ →</a>
+              <a href="#yeager" className="brut px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">VI. Câu Hỏi Yeager</a>
             </div>
           </motion.div>
         </div>
@@ -90,13 +90,13 @@ export function Hero() {
           {Array.from({ length: 2 }).map((_, k) => (
             <div key={k} className="flex shrink-0">
               {[
-                "BILLIONS UNEMPLOYED",
-                "AI OWNERS CONTROL 90% OF GLOBAL WEALTH",
-                "HUMAN LABOR NO LONGER NEEDED",
-                "ROBOT TAX DEMANDS GROW",
-                "MARGINAL COST OF PRODUCTION APPROACHES ZERO",
-                "TWELVE CORPORATIONS · ONE PLANET",
-                "BREAD RIOTS IN SECTOR 12",
+                "HÀNG TỶ NGƯỜI THẤT NGHIỆP",
+                "CHỦ SỞ HỮU AI NẮM GIỮ 90% CỦA CẢI TOÀN CẦU",
+                "LAO ĐỘNG CON NGƯỜI KHÔNG CÒN CẦN THIẾT",
+                "YÊU CẦU ĐÁNH THUẾ ROBOT LAN RỘNG",
+                "CHI PHÍ BIÊN SẢN XUẤT TIẾN VỀ KHÔNG",
+                "MƯỜI HAI TẬP ĐOÀN · MỘT HÀNH TINH",
+                "BẠO LOẠN BÁNH MÌ TẠI KHU VỰC 12",
               ].map((t, i) => (
                 <span key={i} className="px-8 flex items-center gap-8">
                   <span className="blood">◆</span> {t}

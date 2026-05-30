@@ -24,7 +24,7 @@ export function Loader() {
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-paper paper-grain"
         >
           <div className="font-display text-xs uppercase tracking-[0.6em] blood mb-4">
-            Press Run · Edition 2030
+            Lên Khuôn · Ấn Bản 2030
           </div>
           <div className="font-display text-7xl md:text-9xl font-black tabular-nums leading-none">
             {String(pct).padStart(3, "0")}<span className="blood">%</span>
@@ -33,7 +33,7 @@ export function Loader() {
             <div className="h-full bg-ink" style={{ width: `${pct}%` }} />
           </div>
           <div className="mt-6 font-condensed text-[11px] uppercase tracking-[0.4em] text-muted-foreground">
-            Typesetting the manifesto…
+            Đang xếp chữ bản tuyên ngôn…
           </div>
         </motion.div>
       )}
