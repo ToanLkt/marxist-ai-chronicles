@@ -9,8 +9,8 @@ export function RevolutionSection() {
         <div className="flex items-end justify-between border-b-2 border-paper pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần IV</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              <span className="blood">Cách Mạng</span> / Điểm Vỡ
+            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+              <span className="blood">Cách Mạng</span> / <br />Điểm Vỡ
             </h2>
           </div>
           <span className="hidden md:inline font-condensed uppercase tracking-[0.3em] text-xs blood animate-flicker">● CHUYÊN MỤC TUYÊN TRUYỀN ●</span>

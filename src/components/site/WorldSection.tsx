@@ -12,7 +12,7 @@ const replaced = [
 
 const stats = [
   { k: "90%", v: "Của cải toàn cầu do các tập đoàn sở hữu AI nắm giữ" },
-  { k: "≈ 0", v: "Chi phí biên của sản xuất trí tuệ" },
+  { k: "≈ 0", v: "Chi phí sản xuất gần như bằng 0" },
   { k: "2,4 tỷ", v: "Việc làm trí óc bị tự động hóa đến năm 2030" },
   { k: "12×", v: "Năng suất tăng so với mốc 2020" },
 ];
@@ -24,7 +24,7 @@ export function WorldSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần I</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
               Thế Giới Năm <span className="blood">2030</span>
             </h2>
           </div>

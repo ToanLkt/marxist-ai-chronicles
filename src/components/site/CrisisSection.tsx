@@ -12,7 +12,7 @@ const headlines = [
 ];
 
 const sub = [
-  { tag: "Lao Động", h: "Hồi Kết Của Việc Làm", n: "Cục Thống Kê lặng lẽ định nghĩa lại 'thất nghiệp' để loại trừ mọi người trên năm mươi tuổi. Số liệu đẹp lên sau một đêm." },
+  { tag: "Lao Động", h: "Hồi Kết Của Việc Làm", n: "Cục Thống Kê lặng lẽ định nghĩa lại \"thất nghiệp\" để loại trừ mọi người trên năm mươi tuổi. Số liệu đẹp lên sau một đêm." },
   { tag: "Bất Bình Đẳng", h: "Hai Thành Phố, Một Bản Đồ", n: "Siêu công trình tự cấp điện riêng trong khi các tiểu khu phải hạn chế ánh sáng theo mã bưu chính." },
   { tag: "Bất Ổn", h: "Quảng Trường Trở Lại", n: "Từ São Paulo đến Seoul, các quảng trường lại đầy người. Khẩu hiệu thì mới. Nỗi oan thì rất cũ." },
 ];
@@ -24,8 +24,9 @@ export function CrisisSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần III</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              Khủng Hoảng <span className="blood">Xã Hội</span>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+              Khủng Hoảng <br />
+              <span className="blood">Xã Hội</span>
             </h2>
           </div>
           <div className="hidden md:flex items-center gap-2 font-condensed uppercase tracking-[0.3em] text-xs">

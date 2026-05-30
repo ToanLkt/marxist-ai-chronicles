@@ -31,8 +31,8 @@ export function ForceSection() {
       <div className="relative mx-auto max-w-7xl px-6">
         <Reveal><SectionLabel index="02" label="A New Productive Force" /></Reveal>
         <Reveal delay={0.1}>
-          <h2 className="mt-8 max-w-4xl font-display font-extralight tracking-tight"
-              style={{ fontSize: "clamp(2.25rem,6vw,5rem)", lineHeight: 0.95 }}>
+            <h2 className="mt-8 max-w-4xl font-display font-extralight tracking-tight"
+              style={{ fontSize: "clamp(2.25rem,6vw,5rem)", lineHeight: 1.05 }}>
             <span className="text-glow-white">Marx wrote of</span>{" "}
             <span className="italic text-primary text-glow">productive forces</span>.
             <br />He could not have imagined this one.

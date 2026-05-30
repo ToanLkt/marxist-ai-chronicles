@@ -23,7 +23,7 @@ export function Hero() {
         {/* MAIN HEADLINE */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}
-          className="font-display font-black uppercase leading-[0.82] tracking-[-0.02em]"
+          className="font-display font-black uppercase leading-[1.02] tracking-[-0.02em]"
           style={{ fontSize: "clamp(3.5rem, 14vw, 13rem)" }}
         >
           <span className="glitch" data-text="AI 2030">AI 2030</span>
@@ -63,7 +63,7 @@ export function Hero() {
           >
             <div className="border-b-2 border-ink pb-2 font-display uppercase tracking-[0.3em] text-xs">Bởi / Ban Biên Tập</div>
             <p className="drop-cap text-[15px] leading-[1.6]">
-              Vào năm tự động hóa của chúng ta, hai nghìn ba mươi, máy móc không vùng lên. Chúng đã bị sở hữu. Mỗi cử chỉ, mỗi hợp đồng, mỗi chẩn đoán, mỗi dòng mã — đều được tạo ra với chi phí biên gần bằng không bởi những hệ thống không còn cần đến chúng ta. Vậy mà bánh mì lại đắt hơn bao giờ hết.
+              Vào năm tự động hóa của chúng ta, 2030, máy móc không vùng lên. Chúng đã bị sở hữu. Mỗi cử chỉ, mỗi hợp đồng, mỗi chẩn đoán, mỗi dòng mã — đều được tạo ra với chi phí biên gần bằng không bởi những hệ thống không còn cần đến chúng ta. Vậy mà bánh mì lại đắt hơn bao giờ hết.
             </p>
             <p className="text-[15px] leading-[1.6]">
               Ấn bản đặc biệt này được phát hành giữa cơn bão. Đó là biên bản về những gì đã bị bán cho chúng ta dưới cái tên tiến bộ, và là một câu hỏi mà thập niên tới sẽ trả lời bằng bánh mì hoặc lửa: <span className="font-bold uppercase">ai sở hữu các phương tiện nhận thức?</span>
@@ -78,7 +78,7 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a href="#world" className="brut-red px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">Đọc Hồ Sơ →</a>
-              <a href="#yeager" className="brut px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">VI. Câu Hỏi Yeager</a>
+              <a href="#yeager" className="brut px-5 py-3 font-display uppercase tracking-[0.25em] text-sm">VI. Kết Luận</a>
             </div>
           </motion.div>
         </div>

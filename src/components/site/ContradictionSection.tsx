@@ -9,7 +9,7 @@ export function ContradictionSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần II</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
               <span className="blood">Mâu Thuẫn</span> Lớn
             </h2>
           </div>
@@ -27,8 +27,9 @@ export function ContradictionSection() {
           <Reveal>
             <div className="relative bg-paper p-6 md:p-8 border-b-2 md:border-b-0 md:border-r-2 border-ink">
               <div className="font-display uppercase tracking-[0.3em] text-xs">Phía A · Bên Dưới</div>
-              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Người lao động mất <span className="blood">tất cả</span>
+              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
+                Người lao động mất <br />
+                <span className="blood">tất cả</span>
               </h3>
               <figure className="mt-5 border-2 border-ink overflow-hidden">
                 <img src={factoryImg} alt="Phân xưởng trống vắng sau ca làm cuối cùng"
@@ -39,7 +40,7 @@ export function ContradictionSection() {
                   "Tầng lớp trung lưu sụp đổ — kỹ sư xếp hàng tại ngân hàng thực phẩm.",
                   "Lệnh trục xuất phổ quát được phát ra bởi thuật toán lúc 03:00.",
                   "Kỹ năng không còn là hợp đồng — nó chỉ còn là ký ức.",
-                  "Trẻ em học những nghề sẽ không còn tồn tại khi tốt nghiệp.",
+                  "Người trẻ học những nghề sẽ không còn tồn tại khi tốt nghiệp.",
                 ].map((t, i) => (
                   <li key={i} className="flex gap-3"><span className="blood font-bold">▼</span><span>{t}</span></li>
                 ))}
@@ -50,8 +51,8 @@ export function ContradictionSection() {
           <Reveal delay={0.1}>
             <div className="relative bg-ink text-paper p-6 md:p-8">
               <div className="font-display uppercase tracking-[0.3em] text-xs blood">Phía B · Bên Trên</div>
-              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Các <span className="blood">tập đoàn</span> AI siêu giàu
+              <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
+                Các <span className="blood">tập đoàn</span> AI <br />siêu giàu
               </h3>
               <figure className="mt-5 border-2 border-paper overflow-hidden">
                 <img src={dystopiaImg} alt="Đường chân trời của độc quyền dữ liệu xa hoa lúc hoàng hôn"
@@ -76,7 +77,7 @@ export function ContradictionSection() {
           <figure className="mt-16 border-t-4 border-b-4 border-ink py-10 md:py-14 relative">
             <div className="absolute inset-0 halftone-red opacity-[0.04] pointer-events-none" />
             <div className="font-display uppercase tracking-[0.4em] text-xs blood text-center">Từ Tàng Thư · 1859</div>
-            <blockquote className="mt-6 font-display font-black uppercase text-center leading-[0.95] tracking-tight"
+            <blockquote className="mt-6 font-display font-black uppercase text-center leading-[1.05] tracking-tight"
                         style={{ fontSize: "clamp(1.6rem,5.5vw,4.5rem)" }}>
               "Đến một giai đoạn phát triển nhất định, quan hệ sản xuất trở thành
               <span className="blood"> xiềng xích </span>

@@ -25,8 +25,8 @@ export function FuturesSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần V</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              Hai <span className="blood">Tương Lai</span> Có Thể
+            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+              Hai <span className="blood">Tương Lai</span> <br /> Có Thể
             </h2>
           </div>
           <div className="hidden md:block font-condensed uppercase tracking-[0.3em] text-xs">Cùng một cỗ máy. Hai kết cục.</div>
@@ -40,12 +40,12 @@ export function FuturesSection() {
                 <span className="font-display uppercase tracking-[0.3em] text-xs">Khả Năng I</span>
                 <span className="font-condensed text-xs uppercase tracking-[0.3em]">Nhánh A</span>
               </header>
-              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
+              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
                 Xã Hội Hậu <span className="blood">Lao Động</span>
               </h3>
               <figure className="mt-5 border-2 border-ink overflow-hidden">
-                <img src={utopiaImg} alt="Sảnh ngập nắng nơi người ta đọc, vẽ và giảng dạy"
-                     loading="lazy" className="w-full h-64 object-cover img-news" />
+                 <img src={utopiaImg} alt="Sảnh ngập nắng nơi người ta đọc, vẽ và giảng dạy"
+                   loading="lazy" className="w-full h-64 object-cover object-[50%_80%] img-news" />
               </figure>
               <ul className="mt-5 space-y-2.5 font-condensed text-[14px]">
                 {branchA.map((t) => (
@@ -59,13 +59,13 @@ export function FuturesSection() {
           </Reveal>
 
           {/* Dystopia */}
-          <Reveal delay={0.1}>
-            <article className="relative bg-ink text-paper p-6 md:p-8 scanlines-paper">
+          <Reveal delay={0.1} className="h-full">
+            <article className="relative h-full bg-ink text-paper p-6 md:p-8 scanlines-paper">
               <header className="flex items-center justify-between border-b-2 border-paper pb-2">
                 <span className="font-display uppercase tracking-[0.3em] text-xs blood">Khả Năng II</span>
                 <span className="font-condensed text-xs uppercase tracking-[0.3em]">Nhánh B</span>
               </header>
-              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
+              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
                 Sụp Đổ <span className="blood">Xã Hội</span>
               </h3>
               <figure className="mt-5 border-2 border-paper overflow-hidden">

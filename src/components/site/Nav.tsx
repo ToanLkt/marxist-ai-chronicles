@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { motion, useScroll, useSpring } from "motion/react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useMotionValue, useSpring } from "motion/react";
 
 const links = [
   { href: "#world", label: "I. Sơ Lượt" },
@@ -11,9 +11,11 @@ const links = [
 ];
 
 export function Nav() {
+  const headerRef = useRef<HTMLElement>(null);
+  const sectionOffsetsRef = useRef<number[]>([]);
   const [scrolled, setScrolled] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
+  const progressRaw = useMotionValue(0);
+  const progress = useSpring(progressRaw, { stiffness: 120, damping: 30 });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -21,10 +23,60 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const ids = links.map((l) => l.href.replace("#", ""));
+    const updateOffsets = () => {
+      sectionOffsetsRef.current = ids
+        .map((id) => document.getElementById(id))
+        .filter(Boolean)
+        .map((el) => (el as HTMLElement).offsetTop);
+    };
+
+    updateOffsets();
+    window.addEventListener("resize", updateOffsets);
+    return () => window.removeEventListener("resize", updateOffsets);
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const offsets = sectionOffsetsRef.current;
+      if (!offsets.length) return;
+
+      const headerOffset = headerRef.current?.offsetHeight ?? 0;
+      const y = window.scrollY + headerOffset + 1;
+      const start = offsets[0];
+      const end = offsets[offsets.length - 1];
+
+      if (y <= start) {
+        progressRaw.set(0);
+        return;
+      }
+      if (y >= end) {
+        progressRaw.set(1);
+        return;
+      }
+
+      let index = 0;
+      while (index < offsets.length - 1 && y >= offsets[index + 1]) {
+        index += 1;
+      }
+
+      const curr = offsets[index];
+      const next = offsets[index + 1];
+      const sectionProgress = next > curr ? (y - curr) / (next - curr) : 0;
+      const ratio = (index + sectionProgress) / (offsets.length - 1);
+      progressRaw.set(Math.min(Math.max(ratio, 0), 1));
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [progressRaw]);
+
   const today = new Date().toLocaleDateString("vi-VN", { weekday: "long", day: "2-digit", month: "long", year: "numeric" });
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 border-b-2 border-ink bg-paper transition-shadow ${scrolled ? "shadow-[0_4px_0_0_var(--ink)]" : ""}`}>
+    <header ref={headerRef} className={`fixed top-0 inset-x-0 z-50 border-b-2 border-ink bg-paper transition-shadow ${scrolled ? "shadow-[0_4px_0_0_var(--ink)]" : ""}`}>
       <div className="bg-ink text-paper">
         <div className="mx-auto max-w-[1400px] px-5 py-1 flex items-center justify-between font-condensed text-[11px] uppercase tracking-[0.25em]">
           <span>Tập MMXXX · Số 01</span>
