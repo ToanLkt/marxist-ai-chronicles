@@ -7,7 +7,6 @@ import { ContradictionSection } from "@/components/site/ContradictionSection";
 import { CrisisSection } from "@/components/site/CrisisSection";
 import { RevolutionSection } from "@/components/site/RevolutionSection";
 import { FuturesSection } from "@/components/site/FuturesSection";
-import { TitansSection } from "@/components/site/TitansSection";
 import { FinalSection } from "@/components/site/FinalSection";
 
 export const Route = createFileRoute("/")({
@@ -34,7 +33,6 @@ function Index() {
         <CrisisSection />
         <RevolutionSection />
         <FuturesSection />
-        <TitansSection />
         <FinalSection />
       </main>
     </>

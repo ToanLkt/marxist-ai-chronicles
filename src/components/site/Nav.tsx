@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
 
 const links = [
-  { href: "#world", label: "I. 2030" },
+  { href: "#world", label: "I. Sơ Lượt" },
   { href: "#contradiction", label: "II. Mâu Thuẫn" },
-  { href: "#crisis", label: "III. Khủng Hoảng" },
+  { href: "#crisis", label: "III. Nguyên Nhân" },
   { href: "#revolution", label: "IV. Cách Mạng" },
-  { href: "#futures", label: "V. Tương Lai" },
-  { href: "#yeager", label: "VI. Yeager" },
+  { href: "#futures", label: "V. Dự Báo" },
+  { href: "#yeager", label: "VI. Kết Luận" },
 ];
 
 export function Nav() {
