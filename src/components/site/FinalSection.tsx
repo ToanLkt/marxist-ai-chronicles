@@ -14,7 +14,7 @@ export function FinalSection() {
         <div className="mx-auto max-w-[1400px] px-5 py-12 md:py-16">
           <div className="font-display uppercase tracking-[0.4em] text-xs blood">VI. KẾT LUẬN</div>
           <h2
-            className="mt-3 font-display font-black uppercase leading-[1.05]"
+            className="mt-3 font-display font-black uppercase leading-[1.2]"
             style={{ fontSize: "clamp(2.4rem, 7.5vw, 6.8rem)" }}
           >
             VẤN ĐỀ <span className="blood">KHÔNG NẰM Ở AI.</span> MÀ NẰM Ở<br />
@@ -34,7 +34,7 @@ export function FinalSection() {
             <div className="grid md:grid-cols-[1.05fr_1.4fr] gap-6 md:gap-10 items-start">
               <div>
                 <div className="font-display uppercase tracking-[0.35em] text-xs blood">01</div>
-                <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.05]">
+                <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.2]">
                   AI <span className="blood">KHÔNG QUYẾT ĐỊNH</span> TƯƠNG LAI
                 </h3>
               </div>
@@ -78,7 +78,7 @@ export function FinalSection() {
 
               <div className="space-y-5">
                 <div className="font-display uppercase tracking-[0.35em] text-xs blood">02</div>
-                <h3 className="font-display font-black uppercase text-3xl md:text-4xl leading-[1.05]">
+                <h3 className="font-display font-black uppercase text-3xl md:text-4xl leading-[1.2]">
                   SỨC MẠNH MỚI VÀ TRẬT TỰ CŨ
                 </h3>
                 <p className="font-condensed text-[15px] leading-[1.65]">
@@ -87,7 +87,7 @@ export function FinalSection() {
                   cách xã hội vận hành. Nhưng nếu quyền sở hữu vẫn nằm trong tay thiểu số, sức mạnh ấy có thể
                   biến thành công cụ thống trị.
                 </p>
-                <aside className="border-l-4 border-blood pl-5 py-2 font-display text-2xl md:text-3xl uppercase leading-[1.05] font-bold">
+                <aside className="border-l-4 border-blood pl-5 py-2 font-display text-2xl md:text-3xl uppercase leading-[1.2] font-bold">
                   “VẤN ĐỀ KHÔNG PHẢI AI MẠNH ĐẾN ĐÂU.
                   <br />VẤN ĐỀ LÀ <span className="blood">AI THUỘC VỀ AI</span>.”
                 </aside>
@@ -102,7 +102,7 @@ export function FinalSection() {
             <div className="border-y-2 border-ink py-8">
               <div className="font-display uppercase tracking-[0.35em] text-xs blood">GHI CHÚ / LIÊN TƯỞNG ĐẠI CHÚNG</div>
               <blockquote
-                className="mt-6 font-display font-black uppercase leading-[1.05]"
+                className="mt-6 font-display font-black uppercase leading-[1.2]"
                 style={{ fontSize: "clamp(1.5rem, 4.4vw, 3.5rem)" }}
               >
                 “TITAN KHÔNG PHẢI NGUYÊN NHÂN DUY NHẤT CỦA BI KỊCH. TRẬT TỰ XÃ HỘI MỚI LÀ THỨ BIẾN SỨC MẠNH THÀNH NỖI SỢ.”
@@ -139,7 +139,7 @@ export function FinalSection() {
                 </figure>
 
                 <div className="space-y-5">
-                  <h3 className="font-display font-black uppercase text-2xl md:text-3xl leading-[1.05]">
+                  <h3 className="font-display font-black uppercase text-2xl md:text-3xl leading-[1.2]">
                     KHI TRẬT TỰ CŨ KHÔNG CÒN PHÙ HỢP
                   </h3>
                   <div className="space-y-2 font-display uppercase text-xl md:text-2xl leading-tight">
@@ -163,7 +163,7 @@ export function FinalSection() {
           <Reveal>
             <div className="border-2 border-ink bg-paper p-6 md:p-8">
               <div className="font-display uppercase tracking-[0.35em] text-xs blood">05</div>
-              <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.05]">
+              <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.2]">
                 AI: GIẢI PHÓNG HAY <span className="blood">THỐNG TRỊ</span>?
               </h3>
 
@@ -206,7 +206,7 @@ export function FinalSection() {
               <div className="grid lg:grid-cols-[1.1fr_1.4fr] gap-0">
                 <div className="p-6 md:p-8">
                   <div className="font-display uppercase tracking-[0.35em] text-xs blood">06</div>
-                  <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.05]">
+                  <h3 className="mt-2 font-display font-black uppercase text-3xl md:text-4xl leading-[1.2]">
                     TỰ DO LÀ ĐÍCH ĐẾN CUỐI CÙNG
                   </h3>
                   <p className="mt-4 font-condensed text-[15px] leading-[1.65]">
@@ -216,7 +216,7 @@ export function FinalSection() {
                     là công nghệ hay quyền lực, mà là quyền được tự do tồn tại như một con người.
                   </p>
                   <blockquote
-                    className="mt-6 font-display font-black uppercase leading-[1.05]"
+                    className="mt-6 font-display font-black uppercase leading-[1.2]"
                     style={{ fontSize: "clamp(1.4rem, 4.6vw, 3.6rem)" }}
                   >
                     “ĐIỀU CON NGƯỜI TÌM KIẾM SAU MỌI CUỘC CÁCH MẠNG

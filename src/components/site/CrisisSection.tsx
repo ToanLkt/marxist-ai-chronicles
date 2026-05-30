@@ -24,7 +24,7 @@ export function CrisisSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần III</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1.2]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
               Khủng Hoảng <br />
               <span className="blood">Xã Hội</span>
             </h2>

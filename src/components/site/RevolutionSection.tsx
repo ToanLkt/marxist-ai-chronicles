@@ -9,7 +9,7 @@ export function RevolutionSection() {
         <div className="flex items-end justify-between border-b-2 border-paper pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần IV</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1.2]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
               <span className="blood">Cách Mạng</span> / <br />Điểm Vỡ
             </h2>
           </div>
@@ -27,7 +27,7 @@ export function RevolutionSection() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="space-y-6">
-              <p className="font-display text-3xl md:text-4xl uppercase leading-[1.05] font-bold">
+              <p className="font-display text-3xl md:text-4xl uppercase leading-[1.2] font-bold">
                 AI có thể <span className="blood">giải phóng</span> loài người.<br/>
                 Dưới <span className="blood">quyền sở hữu</span> cũ, nó chỉ áp bức.
               </p>

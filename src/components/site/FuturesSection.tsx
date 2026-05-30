@@ -25,7 +25,7 @@ export function FuturesSection() {
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần V</div>
-            <h2 className="mt-2 font-display font-black uppercase leading-[1]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
+            <h2 className="mt-2 font-display font-black uppercase leading-[1.2]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
               Hai <span className="blood">Tương Lai</span> <br /> Có Thể
             </h2>
           </div>
@@ -40,7 +40,7 @@ export function FuturesSection() {
                 <span className="font-display uppercase tracking-[0.3em] text-xs">Khả Năng I</span>
                 <span className="font-condensed text-xs uppercase tracking-[0.3em]">Nhánh A</span>
               </header>
-              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
+              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.2]">
                 Xã Hội Hậu <span className="blood">Lao Động</span>
               </h3>
               <figure className="mt-5 border-2 border-ink overflow-hidden">
@@ -65,7 +65,7 @@ export function FuturesSection() {
                 <span className="font-display uppercase tracking-[0.3em] text-xs blood">Khả Năng II</span>
                 <span className="font-condensed text-xs uppercase tracking-[0.3em]">Nhánh B</span>
               </header>
-              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.05]">
+              <h3 className="mt-4 font-display font-black uppercase text-4xl md:text-5xl leading-[1.2]">
                 Sụp Đổ <span className="blood">Xã Hội</span>
               </h3>
               <figure className="mt-5 border-2 border-paper overflow-hidden">

@@ -31,7 +31,7 @@ export function Hero() {
 
         <motion.h2
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.9, delay: 0.25 }}
-          className="mt-4 font-display font-light uppercase border-y-2 border-ink py-4 leading-[1.05]"
+          className="mt-4 font-display font-light uppercase border-y-2 border-ink py-4 leading-[1.2]"
           style={{ fontSize: "clamp(1.1rem, 2.6vw, 2.1rem)" }}
         >
           Khi lực lượng sản xuất trở nên <span className="blood font-bold italic">mạnh hơn</span> chính cái xã hội đang chứa đựng chúng.
@@ -71,7 +71,7 @@ export function Hero() {
 
             <aside className="brut p-5">
               <div className="font-display uppercase tracking-[0.25em] text-[11px] blood mb-2">Trích Dẫn Của Biên Tập</div>
-              <p className="font-display text-2xl md:text-3xl font-bold leading-[1.05] uppercase">
+              <p className="font-display text-2xl md:text-3xl font-bold leading-[1.2] uppercase">
                 "Vấn đề không phải AI mạnh đến đâu. <span className="blood">Vấn đề là ai sở hữu nó.</span>"
               </p>
             </aside>
