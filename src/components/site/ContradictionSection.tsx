@@ -8,17 +8,17 @@ export function ContradictionSection() {
       <div className="mx-auto max-w-[1400px] px-5 py-16 md:py-24">
         <div className="flex items-end justify-between border-b-2 border-ink pb-3">
           <div>
-            <div className="font-display uppercase tracking-[0.4em] text-xs blood">Part II</div>
+            <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần II</div>
             <h2 className="mt-2 font-display font-black uppercase leading-[0.85]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              The <span className="blood">Contradiction</span>
+              <span className="blood">Mâu Thuẫn</span> Lớn
             </h2>
           </div>
-          <span className="stamp animate-flicker hidden md:inline-block">Editorial</span>
+          <span className="stamp animate-flicker hidden md:inline-block">Xã Luận</span>
         </div>
 
         <Reveal>
           <p className="mt-8 max-w-3xl font-display text-2xl md:text-3xl uppercase leading-[1.1] font-light">
-            New productive forces <span className="blood font-bold">colliding</span> with old relations of production.
+            Lực lượng sản xuất mới <span className="blood font-bold">va chạm</span> với quan hệ sản xuất cũ.
           </p>
         </Reveal>
 
@@ -26,20 +26,20 @@ export function ContradictionSection() {
         <div className="mt-12 grid md:grid-cols-2 border-2 border-ink">
           <Reveal>
             <div className="relative bg-paper p-6 md:p-8 border-b-2 md:border-b-0 md:border-r-2 border-ink">
-              <div className="font-display uppercase tracking-[0.3em] text-xs">Side A · Below</div>
+              <div className="font-display uppercase tracking-[0.3em] text-xs">Phía A · Bên Dưới</div>
               <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Workers losing <span className="blood">everything</span>
+                Người lao động mất <span className="blood">tất cả</span>
               </h3>
               <figure className="mt-5 border-2 border-ink overflow-hidden">
-                <img src={factoryImg} alt="Empty assembly hall after the last shift"
+                <img src={factoryImg} alt="Phân xưởng trống vắng sau ca làm cuối cùng"
                      loading="lazy" className="w-full h-56 object-cover img-news-red" />
               </figure>
               <ul className="mt-5 space-y-3 font-condensed text-[14px]">
                 {[
-                  "Collapse of the middle class — engineers queue at food banks.",
-                  "Universal eviction notices issued algorithmically at 03:00.",
-                  "Skill is no longer a contract — it is a memory.",
-                  "Children study trades that will not exist by graduation.",
+                  "Tầng lớp trung lưu sụp đổ — kỹ sư xếp hàng tại ngân hàng thực phẩm.",
+                  "Lệnh trục xuất phổ quát được phát ra bởi thuật toán lúc 03:00.",
+                  "Kỹ năng không còn là hợp đồng — nó chỉ còn là ký ức.",
+                  "Trẻ em học những nghề sẽ không còn tồn tại khi tốt nghiệp.",
                 ].map((t, i) => (
                   <li key={i} className="flex gap-3"><span className="blood font-bold">▼</span><span>{t}</span></li>
                 ))}
@@ -49,20 +49,20 @@ export function ContradictionSection() {
 
           <Reveal delay={0.1}>
             <div className="relative bg-ink text-paper p-6 md:p-8">
-              <div className="font-display uppercase tracking-[0.3em] text-xs blood">Side B · Above</div>
+              <div className="font-display uppercase tracking-[0.3em] text-xs blood">Phía B · Bên Trên</div>
               <h3 className="mt-2 font-display font-black uppercase text-4xl md:text-5xl leading-[0.9]">
-                Ultra-rich AI <span className="blood">corporations</span>
+                Các <span className="blood">tập đoàn</span> AI siêu giàu
               </h3>
               <figure className="mt-5 border-2 border-paper overflow-hidden">
-                <img src={dystopiaImg} alt="Luxury data-monopoly skyline at dusk"
+                <img src={dystopiaImg} alt="Đường chân trời của độc quyền dữ liệu xa hoa lúc hoàng hôn"
                      loading="lazy" className="w-full h-56 object-cover img-news" />
               </figure>
               <ul className="mt-5 space-y-3 font-condensed text-[14px]">
                 {[
-                  "Data monopolies priced by the gigabyte of human attention.",
-                  "Luxury towers cooled by oceans you cannot fish in.",
-                  "Boards that meet quarterly to decide what citizenship means.",
-                  "Private armies of inference. Public hunger of the displaced.",
+                  "Độc quyền dữ liệu được định giá theo từng gigabyte sự chú ý.",
+                  "Các tòa tháp xa hoa làm mát bằng đại dương mà bạn không được phép đánh cá.",
+                  "Hội đồng họp hàng quý để quyết định ý nghĩa của công dân.",
+                  "Đội quân suy luận tư nhân. Cơn đói công cộng của người bị thay thế.",
                 ].map((t, i) => (
                   <li key={i} className="flex gap-3"><span className="blood font-bold">▲</span><span>{t}</span></li>
                 ))}
@@ -75,15 +75,15 @@ export function ContradictionSection() {
         <Reveal>
           <figure className="mt-16 border-t-4 border-b-4 border-ink py-10 md:py-14 relative">
             <div className="absolute inset-0 halftone-red opacity-[0.04] pointer-events-none" />
-            <div className="font-display uppercase tracking-[0.4em] text-xs blood text-center">From the Archives · 1859</div>
+            <div className="font-display uppercase tracking-[0.4em] text-xs blood text-center">Từ Tàng Thư · 1859</div>
             <blockquote className="mt-6 font-display font-black uppercase text-center leading-[0.95] tracking-tight"
                         style={{ fontSize: "clamp(1.6rem,5.5vw,4.5rem)" }}>
-              "At a certain stage of development, the relations of production become
-              <span className="blood"> chains </span>
-              upon the productive forces."
+              "Đến một giai đoạn phát triển nhất định, quan hệ sản xuất trở thành
+              <span className="blood"> xiềng xích </span>
+              của lực lượng sản xuất."
             </blockquote>
             <figcaption className="mt-8 text-center font-condensed uppercase tracking-[0.4em] text-sm">
-              — Karl Marx · A Contribution to the Critique of Political Economy
+              — Karl Marx · Góp Phần Phê Phán Khoa Kinh Tế Chính Trị
             </figcaption>
           </figure>
         </Reveal>
@@ -92,9 +92,9 @@ export function ContradictionSection() {
         <Reveal>
           <div className="mt-14 grid md:grid-cols-3 gap-0 border-2 border-ink">
             {[
-              { t: "Chains", n: "Old contracts strapped to new machines." },
-              { t: "Cages", n: "Walled platforms that bill you for breathing." },
-              { t: "Walls", n: "Citizenship redrawn around the server farms." },
+              { t: "Xiềng", n: "Những hợp đồng cũ buộc chặt vào máy móc mới." },
+              { t: "Lồng", n: "Những nền tảng có tường rào tính phí cả việc bạn hít thở." },
+              { t: "Tường", n: "Quyền công dân được vẽ lại quanh các nông trại máy chủ." },
             ].map((m, i) => (
               <div key={m.t} className={`p-7 ${i !== 2 ? "md:border-r-2 border-ink" : ""} ${i !== 2 ? "border-b-2 md:border-b-0 border-ink" : ""} bg-paper`}>
                 <div className="font-display font-black uppercase text-6xl leading-none">{m.t}</div>
