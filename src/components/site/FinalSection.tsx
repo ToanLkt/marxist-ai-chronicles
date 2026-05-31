@@ -17,8 +17,8 @@ export function FinalSection() {
             className="mt-3 font-display font-black uppercase leading-[1.2]"
             style={{ fontSize: "clamp(2.4rem, 7.5vw, 6.8rem)" }}
           >
-            VẤN ĐỀ <span className="blood">KHÔNG NẰM Ở AI.</span> MÀ NẰM Ở<br />
-            <span className="blood">QUYỀN LỰC</span>
+            VẤN ĐỀ <span className="blood">KHÔNG NẰM Ở AI.</span> MÀ NẰM Ở 
+            <span className="blood"> QUYỀN LỰC</span>
           </h2>
           <p className="mt-5 max-w-3xl font-condensed text-[15px] md:text-[16px] leading-[1.6] text-paper/85">
             AI không tự tạo ra thiên đường hay địa ngục. Vấn đề nằm ở việc ai sở hữu AI, AI phục vụ ai,

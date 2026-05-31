@@ -69,12 +69,12 @@ export function WorldSection() {
         </Reveal>
 
         {/* Big image + stats */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-[1.2fr_1fr] items-start">
+        <div className="mt-16 grid gap-8 lg:grid-cols-[1.2fr_1fr] items-stretch">
           <Reveal>
-            <figure className="border-2 border-ink relative">
+            <figure className="border-2 border-ink relative flex h-full flex-col">
               <img src={factoryImg} alt="Hàng dài cánh tay robot trong một nhà máy tự động hóa"
                    loading="lazy" width={1600} height={1024}
-                   className="w-full h-[420px] object-cover img-news" />
+                   className="w-full flex-1 object-cover img-news" />
               <div className="absolute inset-0 mix-blend-multiply halftone opacity-[0.07]" />
               <div className="absolute top-3 left-3 bg-ink text-paper px-2 py-1 font-display uppercase tracking-[0.3em] text-[11px]">Cơ Sở 07 · Tự Động Hoàn Toàn</div>
               <figcaption className="border-t-2 border-ink p-3 bg-paper font-condensed text-[12px] uppercase tracking-[0.2em]">
@@ -83,12 +83,12 @@ export function WorldSection() {
             </figure>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="border-2 border-ink">
+            <div className="border-2 border-ink flex h-full flex-col">
               <div className="bg-ink text-paper px-4 py-2 font-display uppercase tracking-[0.3em] text-xs flex justify-between">
                 <span>Chỉ Số · 2030</span><span className="blood">Nguồn: Cục Thống Kê Mới</span>
               </div>
               {stats.map((s, i) => (
-                <div key={s.k} className={`flex items-baseline gap-5 px-5 py-4 ${i !== stats.length - 1 ? "border-b border-ink/30" : ""}`}>
+                <div key={s.k} className={`flex flex-1 items-center gap-5 px-5 py-4 ${i !== stats.length - 1 ? "border-b border-ink/30" : ""}`}>
                   <div className="font-display font-black tabular-nums text-5xl md:text-6xl leading-none w-40">{s.k}</div>
                   <div className="font-condensed uppercase tracking-[0.18em] text-[13px] text-foreground/85">{s.v}</div>
                 </div>

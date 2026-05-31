@@ -26,7 +26,7 @@ export function FuturesSection() {
           <div>
             <div className="font-display uppercase tracking-[0.4em] text-xs blood">Phần V</div>
             <h2 className="mt-2 font-display font-black uppercase leading-[1.2]" style={{ fontSize: "clamp(2.5rem,8vw,7rem)" }}>
-              Hai <span className="blood">Tương Lai</span> <br /> Có Thể
+              Hai <span className="blood">Tương Lai</span> <br /> Có Thể Xảy Ra
             </h2>
           </div>
           <div className="hidden md:block font-condensed uppercase tracking-[0.3em] text-xs">Cùng một cỗ máy. Hai kết cục.</div>
