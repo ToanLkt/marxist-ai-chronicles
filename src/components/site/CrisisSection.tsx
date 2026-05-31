@@ -41,7 +41,7 @@ export function CrisisSection() {
                  loading="lazy" className="w-full h-[55vh] object-cover img-news-red" />
             <div className="absolute inset-0 mix-blend-multiply halftone opacity-[0.1]" />
             <div className="absolute top-4 left-4 brut-red px-3 py-1 font-display uppercase tracking-[0.3em] text-xs">Tin từ tuyến đầu</div>
-            <div className="absolute bottom-4 right-4 bg-ink text-paper px-3 py-1 font-condensed uppercase tracking-[0.25em] text-xs">Ảnh · M. Ravel · 22·09·2030</div>
+     
             <figcaption className="border-t-2 border-ink p-3 bg-paper font-condensed text-[12px] uppercase tracking-[0.2em]">
               Cuộc tuần hành đòi thuế robot hội tụ với hội kỹ sư thất nghiệp. Máy bay không người lái cảnh sát quần thảo trên đầu. Không có buổi họp báo nào được lên lịch.
             </figcaption>
